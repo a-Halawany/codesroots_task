@@ -1,0 +1,49 @@
+/* Start Second navbar */
+.second {
+  background: #01b7f2;
+  padding: 10xp 0;
+}
+.icons fa-icon{
+  cursor: pointer;
+}
+.second .container .d-flex {
+  height: 50px;
+}
+ul.buttons a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+.dropdown-menu {
+  padding: 0;
+  min-width: unset !important;
+}
+.dropdown-menu li a {
+  padding: 0;
+  margin: 0;
+}
+/* End Second navbar */
+/* Start third navbar */
+.navbar-nav li a.dropdown-toggle {
+  text-transform: uppercase;
+  padding: 0 15px;
+  color: #838383;
+}
+.navbar-nav li a.dropdown-toggle:hover {
+  color: #01b7f2;
+    text-decoration: none;
+    transition: .5s;
+}
+
+div a.enquiry {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #01b7f2;
+  padding: 12px 40px;
+  border: 1px solid #0000;
+  border-color: #01b7f2;
+  background: #fff;
+  font-size: 14px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+/* End third navbar */

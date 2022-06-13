@@ -1,0 +1,24 @@
+<section class="bg-gray-200 py-5">
+  <div class="container">
+    <div class="header">
+      <h3>Recommended Hotels</h3>
+      <p class="w-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+    </div>
+  </div>
+  <p-carousel class="text-center" [value]="recData" [numVisible]="1"  [numScroll]="1" [responsiveOptions]="responsiveOptions">
+    <ng-template let-item pTemplate="item">
+      <div class="card" style="width: 18rem;">
+        <img [src]="sharedService.domain_url + item.cover" style="height: 18rem;" class="card-img-top" [alt]="item.name">
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <p class="card-text">{{item.description}}</p>
+          <span class="mb-2 text-black-50 card-text" *ngFor="let x of item.cuisines;let last=last">{{last ? x.name : x.name + ' - '}} </span>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </ng-template>
+</p-carousel>
+
+
+</section>
+

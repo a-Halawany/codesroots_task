@@ -1,0 +1,43 @@
+.taps{
+  margin-top: -55px;
+}
+
+.full-width {
+  width: 100%;
+}
+.btn-first {
+  display: inline-block;
+  padding: 12px 40px;
+  position: relative;
+  transition: all .5s;
+  background: #0000;
+  color: inherit;
+  border: 1px solid #0000;
+  font-size: 14px;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+.btn-submit {
+  border-color: #01b7f2;
+  color: #01b7f2;
+  background: #fff;
+}
+.btn-height, button.btn-height {
+  height: 40px;
+  line-height: 1;
+  padding: 0;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+}
+.banner-tabs label.submit+button {
+  margin-bottom: 1rem;
+}
+
+
+
+
+

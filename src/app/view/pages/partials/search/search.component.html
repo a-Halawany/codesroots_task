@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="taps">
+    <p-tabView>
+      <p-tabPanel header="Hotel" [selected]="true">
+        <form [formGroup]="SearchForm" class="align-items-center justify-content-center row">
+          <div class="col-lg-3 col-md-6">
+            <div>
+              <span>Your Destination</span>
+              <input
+                type="text"
+                pInputText
+                [style]="{ width: '100%' }"
+                class="p-inputtext-sm"
+                placeholder="Small"
+                formGroupName="destination"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <span>Check In</span>
+                <p-calendar
+                  [showIcon]="true"
+                  inputId="icon"
+                  appendTo="body"
+                  formGroupName="startDate"
+                ></p-calendar>
+              </div>
+              <div class="col-6">
+                <span>Check Out</span>
+                <p-calendar
+                  [showIcon]="true"
+                  inputId="icon"
+                  appendTo="body"
+                  formGroupName="endDate"
+                ></p-calendar>
+              </div>
+              <div class="col-6"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="row">
+              <div class="col-4">
+                <span>Rooms</span>
+                <p-dropdown formControlName="rooms" [options]="[1, 2, 3, 4, 5, 6]"></p-dropdown>
+              </div>
+              <div class="col-4">
+                <span>Adults</span>
+                <p-dropdown formControlName="adults" [options]="[1, 2, 3, 4, 5, 6]"></p-dropdown>
+              </div>
+              <div class="col-4">
+                <span>Kids</span>
+                <p-dropdown formControlName="kids" [options]="[1, 2, 3, 4, 5, 6]"></p-dropdown>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <button class="btn-first btn-submit full-width btn-height" (click)="getHomeDataWithFilter()">
+              Search now
+            </button>
+          </div>
+        </form>
+      </p-tabPanel>
+      <p-tabPanel header="Flights"> Flights </p-tabPanel>
+      <p-tabPanel header="Cruise"> Cruise </p-tabPanel>
+      <p-tabPanel header="Cars"> Cars </p-tabPanel>
+    </p-tabView>
+  </div>
+</div>
